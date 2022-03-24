@@ -18,6 +18,8 @@ body{
 }
 #counter_body{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #counter_body .time{
     width: 120px;
@@ -32,4 +34,19 @@ body{
 
 #counter_body .time h1{
     font-size: 35px;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .title{
+        text-align: center;
+    }
+
+    #counter_body{
+        flex-wrap: wrap;
+        text-align: center;
+    }
 }
