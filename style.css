@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("./ramadan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#counter_body{
+    display: flex;
+}
+#counter_body .time{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 20px;
+}
+
+#counter_body .time h1{
+    font-size: 35px;
+}
