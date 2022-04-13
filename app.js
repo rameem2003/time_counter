@@ -1,9 +1,9 @@
-var ramadanDate = "03 April 2022";
+
 
 
 function counter(){
-    ramadan = new Date(ramadanDate);
-    today = new Date();
+    var ramadan = new Date("13 April 2022 20:50:00").getTime();
+    var today = new Date().getTime();
 
     remDate = (ramadan - today) / 1000;
 
@@ -17,6 +17,12 @@ function counter(){
     document.getElementById("hour").innerHTML = hour;
     document.getElementById("minute").innerHTML = minute;
     document.getElementById("second").innerHTML = second;
+
+    console.log(remDate);
+
+    if(day < 0 && hour < 0 && minute < 0 && second < 0){
+        document.getElementById("title").innerHTML = "start";
+    }
 }
 
 setInterval(counter, 1000);
